@@ -1,0 +1,93 @@
+.sidebar {
+  position: fixed;
+  &__button {
+    &-open {
+      margin: 15px 0 0 15px;
+      position: absolute;
+      display: block;
+      &.closed {
+      }
+      &.open {
+        display: none;
+      }
+    }
+    &-close {
+      position: absolute;
+      right: 0;
+      margin: 15px 15px 0 0;
+
+      &:hover &-bar1,
+      &:hover &-bar3 {
+        background-color: white;
+      }
+      &-bar1,
+      &-bar2,
+      &-bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: gray;
+
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      &-bar1 {
+        transform: rotate(-44deg) translate(-10px, 5px);
+      }
+      &-bar2 {
+        opacity: 0;
+      }
+      &-bar3 {
+        transform: rotate(44deg) translate(-10px, -7px);
+      }
+      &.open {
+      }
+      &.closed {
+      }
+    }
+  }
+  &__icon {
+    &-bar1,
+    &-bar2,
+    &-bar3 {
+      width: 30px;
+      height: 4px;
+      background-color: #333;
+      &:nth-child(2) {
+        margin: 8px 0;
+      }
+    }
+  }
+  &__content {
+    transition: width 0.2s ease-in 0s, linear 0.2s;
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    &.open {
+      width: 300px;
+      z-index: 1;
+      background: black;
+    }
+    &.closed {
+    }
+    &-link {
+      color: gray;
+      font-family: JosefinBold;
+      font-size: 20px;
+      padding: 10px 15px 10px 60px;
+      text-decoration: none;
+      transition: ease;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+      &:first-of-type {
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 html * {
-  margin: unset;
-  padding: unset;
-  font-family: "AvenirRegular";
+  margin: 0;
+  padding: 0;
+  font-family: "JosefinRegular";
   box-sizing: border-box;
 }
 *,
@@ -16,4 +16,15 @@ body {
   position: relative;
 }
 
-@import "./partials/carousel";
+.App {
+  margin-left: 0;
+  transition: 0.2s ease-in 0s;
+  &.open {
+    margin-left: 300px;
+  }
+}
+
+@import "./partials/fonts";
+@import "./partials/colors";
+@import "./partials/header";
+@import "./partials/sidebar";

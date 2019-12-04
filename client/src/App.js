@@ -1,12 +1,22 @@
-import React from "react";
+import React, { Component } from "react";
 import Home from "./components/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
-}
+export default class App extends Component {
+  state = {
+    open: false
+  };
+  onClick = () => {
+    this.setState({
+      open: !this.state.open
+    });
+  };
+  render() {
+    let something = this.state.open === true ? "open" : "closed";
 
-export default App;
+    return (
+      <div className={`App ${something}`}>
+        <Home open={this.state.open} click={this.onClick} />
+      </div>
+    );
+  }
+}
