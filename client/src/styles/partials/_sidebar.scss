@@ -1,8 +1,22 @@
 .sidebar {
   position: fixed;
+  &-background {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.5s, ease, linear 0.5s;
+    &.open {
+      content: "";
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      z-index: 2;
+      opacity: 0.5;
+    }
+  }
   &__button {
     &-open {
-      margin: 15px 0 0 15px;
+      margin: 35px 0 0 35px;
       position: absolute;
       display: block;
       &.closed {
@@ -18,7 +32,7 @@
 
       &:hover &-bar1,
       &:hover &-bar3 {
-        background-color: white;
+        background-color: black;
       }
       &-bar1,
       &-bar2,
@@ -58,7 +72,7 @@
     }
   }
   &__content {
-    transition: width 0.2s ease-in 0s, linear 0.2s;
+    transition: all 0.2s ease-in 0s, linear 0.2s;
     position: absolute;
     height: 100vh;
     width: 0;
@@ -67,10 +81,13 @@
     left: 0;
     display: flex;
     flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     &.open {
+      border-right: 2px solid $mercury;
       width: 300px;
-      z-index: 1;
-      background: black;
+      z-index: 3;
+      background: white;
     }
     &.closed {
     }
@@ -79,14 +96,15 @@
       font-family: JosefinBold;
       font-size: 20px;
       padding: 10px 15px 10px 60px;
+      margin: 10px 0;
       text-decoration: none;
       transition: ease;
       &:hover {
-        color: white;
+        color: black;
         text-decoration: none;
       }
       &:first-of-type {
-        margin-top: 50px;
+        margin-top: 100px;
       }
     }
   }

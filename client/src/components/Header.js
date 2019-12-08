@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
+  state = {
+    open: false
+  };
   render() {
     let something = this.state.open === true ? "open" : "closed";
     return (
@@ -25,6 +28,33 @@ export default class Header extends Component {
             Categories
           </NavLink>
           <div className={`header__dropdown-content ${something}`}>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Automotive
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Electronics
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Health
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Automotive
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Electronics
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Health
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Automotive
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Electronics
+            </NavLink>
+            <NavLink className="header__dropdown-link" exact to="/">
+              Health
+            </NavLink>
             <NavLink className="header__dropdown-link" exact to="/">
               Automotive
             </NavLink>

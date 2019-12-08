@@ -6,7 +6,8 @@ export default class Sidebar extends Component {
     let something = this.props.open === true ? "open" : "closed";
 
     return (
-      <div>
+      <div className="sidebar">
+        <div className={`sidebar-background ${something}`}></div>
         <div
           className={`sidebar__button-open ${something}`}
           onClick={() => this.props.click()}
@@ -22,9 +23,9 @@ export default class Sidebar extends Component {
             className="sidebar__button-close"
             onClick={() => this.props.click()}
           >
-            <div className="sidebar__button-close-bar1"></div>
-            <div className="sidebar__button-close-bar2"></div>
-            <div className="sidebar__button-close-bar3"></div>
+            <div className={`sidebar__button-close-bar1 ${something}`}></div>
+            <div className={`sidebar__button-close-bar2 ${something}`}></div>
+            <div className={`sidebar__button-close-bar3 ${something}`}></div>
           </div>
           <NavLink className="sidebar__content-link" to="/">
             About

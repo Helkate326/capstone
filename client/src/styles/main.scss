@@ -1,8 +1,15 @@
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 html * {
   margin: 0;
   padding: 0;
   font-family: "JosefinRegular";
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 *,
 *:before,
@@ -20,7 +27,7 @@ body {
   margin-left: 0;
   transition: 0.2s ease-in 0s;
   &.open {
-    margin-left: 300px;
+    // margin-left: 300px;
   }
 }
 
@@ -28,3 +35,5 @@ body {
 @import "./partials/colors";
 @import "./partials/header";
 @import "./partials/sidebar";
+@import "./partials/hero";
+@import "./partials/categories";
