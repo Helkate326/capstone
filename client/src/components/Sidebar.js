@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 
 export default class Sidebar extends Component {
   render() {
@@ -27,18 +26,34 @@ export default class Sidebar extends Component {
             <div className={`sidebar__button-close-bar2 ${something}`}></div>
             <div className={`sidebar__button-close-bar3 ${something}`}></div>
           </div>
-          <NavLink className="sidebar__content-link" to="/">
-            About
-          </NavLink>
-          <NavLink className="sidebar__content-link" to="/">
-            Services
-          </NavLink>
-          <NavLink className="sidebar__content-link" to="/">
-            Clients
-          </NavLink>
-          <NavLink className="sidebar__content-link" to="/">
+          <a
+            onClick={() => this.props.click()}
+            className="sidebar__content-link"
+            href="#home"
+          >
+            Home
+          </a>
+          <a
+            onClick={() => this.props.click()}
+            className="sidebar__content-link"
+            href="#categories"
+          >
+            Categories
+          </a>
+          <a
+            onClick={() => this.props.click()}
+            className="sidebar__content-link"
+            href="#feature"
+          >
+            Featured
+          </a>
+          <a
+            onClick={() => this.props.click()}
+            className="sidebar__content-link"
+            href="#home"
+          >
             Contact
-          </NavLink>
+          </a>
         </div>
       </div>
     );

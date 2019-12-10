@@ -8,63 +8,18 @@ export default class Header extends Component {
   render() {
     let something = this.state.open === true ? "open" : "closed";
     return (
-      <div className="header">
+      <div className="header" id="home">
         <NavLink className="header-logo" exact to="/">
           LOGO
         </NavLink>
-        <div
-          className="header__dropdown-icon"
-          onClick={() => this.setState({ open: !this.state.open })}
-        >
-          <div className="header__dropdown-icon-bar1"></div>
-          <div className="header__dropdown-icon-bar2"></div>
-          <div className="header__dropdown-icon-bar3"></div>
-        </div>
+
         <div
           className="header__dropdown"
           onClick={() => this.setState({ open: !this.state.open })}
         >
-          <NavLink className="header__dropdown-title" to="/">
+          <a className="header__dropdown-title" href="#categories">
             Categories
-          </NavLink>
-          <div className={`header__dropdown-content ${something}`}>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Automotive
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Electronics
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Health
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Automotive
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Electronics
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Health
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Automotive
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Electronics
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Health
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Automotive
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Electronics
-            </NavLink>
-            <NavLink className="header__dropdown-link" exact to="/">
-              Health
-            </NavLink>
-          </div>
+          </a>
         </div>
         <input
           className="header-search"

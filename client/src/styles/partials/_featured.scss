@@ -1,0 +1,39 @@
+.feature {
+  padding: 50px 12.5% 0 12.5%;
+  width: 100vw;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 15px 0;
+  }
+  &__card {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.2s, ease, linear 0.2s;
+    &-img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      background: $alabaster;
+      padding: 50px;
+      border-radius: 30px;
+      &.one {
+        background: $lightblue;
+      }
+      &.two {
+        background: $violet;
+      }
+      &.three {
+        background: $darkblue;
+      }
+    }
+    &-title {
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+}

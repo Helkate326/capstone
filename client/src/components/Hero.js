@@ -23,7 +23,7 @@ export default class Hero extends Component {
           transitiontimingfunction: "ease-out, linear 2s",
           opacity: 0
         },
-        search: {
+        button: {
           transition: "all 2s",
           transitiontimingfunction: "ease-out, linear 2s",
           opacity: 0
@@ -54,7 +54,7 @@ export default class Hero extends Component {
           transform: "translateY(50px)",
           opacity: 1
         },
-        search: {
+        button: {
           //   transition: "all 2s",
           transitiontimingfunction: "ease-out, linear 2s",
           transform: "translateY(50px)",
@@ -85,11 +85,13 @@ export default class Hero extends Component {
             >
               Not Really.
             </h2>
-            <input
-              className="hero__container-search"
-              style={this.state.style.search}
-              placeholder="Products and Reviews"
-            ></input>
+            <a
+              href="#categories"
+              className="hero__container-button"
+              style={this.state.style.button}
+            >
+              Categories
+            </a>
           </div>
           <img
             className="hero__container-img"

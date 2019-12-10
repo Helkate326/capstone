@@ -1,6 +1,7 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html * {
@@ -33,7 +34,10 @@ body {
 
 @import "./partials/fonts";
 @import "./partials/colors";
+@import "./partials/intro";
 @import "./partials/header";
 @import "./partials/sidebar";
 @import "./partials/hero";
 @import "./partials/categories";
+@import "./partials/featured";
+@import "./partials/desktop";

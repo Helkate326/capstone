@@ -31,30 +31,30 @@
       }
     }
 
-    &-icon {
-      padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 5px;
-      &-bar1,
-      &-bar2,
-      &-bar3 {
-        width: 20px;
-        height: 3px;
-        background-color: #333;
-        &:nth-child(2) {
-          margin: 5px 0;
-        }
-      }
-    }
+    // &-icon {
+    //   padding-bottom: 5px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   margin-right: 5px;
+    //   &-bar1,
+    //   &-bar2,
+    //   &-bar3 {
+    //     width: 20px;
+    //     height: 3px;
+    //     background-color: #333;
+    //     &:nth-child(2) {
+    //       margin: 5px 0;
+    //     }
+    // }
+    // }
     &-content.open {
       display: flex;
       flex-direction: column;
       align-items: center;
       position: absolute;
       top: 100%;
-      left: -45px;
+      left: -35px;
       border: 1px solid $mercury;
       background: $alabaster;
       width: 150px;
