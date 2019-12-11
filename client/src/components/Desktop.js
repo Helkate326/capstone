@@ -9,10 +9,12 @@ export default class Desktops extends Component {
             <div className="desktop__container"></div>
             <div className="desktop__container-bottom">
               <h2 className="desktop__container-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Varius quam quisque id diam. Netus et malesuada fames ac turpis.
-                Faucibus ornare suspendisse sed nisi lacus sed.
+                Powerful, lag-free gaming is easily experienced with the Acer
+                Nitro gaming PC. This compact design boasts a 2.9GHz Intel Core
+                i5-9400F processor with 8GB RAM, and large 1TB HDD for storing
+                all your digital files. The NVIDIA GeForce GTX 1050 graphics
+                card with 2GB of dedicated memory offers smooth gaming and
+                graphic-intensive tasking.
               </h2>
             </div>
           </div>

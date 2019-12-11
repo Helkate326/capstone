@@ -4,12 +4,17 @@
 }
 
 .header {
+  position: absolute;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   height: 100px;
   //   justify-content: space-between;
-  margin: 0 12.5%;
+  padding: 0 12.5%;
+  z-index: 2;
+  border-bottom: 2px solid $silver;
+  background: white;
 
   &__container {
     display: flex;

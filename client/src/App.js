@@ -13,10 +13,8 @@ export default class App extends Component {
     });
   };
   render() {
-    let something = this.state.open === true ? "open" : "closed";
-
     return (
-      <div className={`App ${something}`}>
+      <div className="App">
         <Home open={this.state.open} click={this.onClick} />
       </div>
     );

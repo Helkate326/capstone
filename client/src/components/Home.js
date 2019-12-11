@@ -12,9 +12,8 @@ export default function Home(props) {
     <div>
       <Intro />
       <Sidebar open={props.open} click={props.click} />
-      <Header open={props.open} click={props.click} />
+      <Header click={props.click} />
       <Hero />
-      <Categories />
       <Featured />
       <Desktop />
     </div>

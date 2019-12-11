@@ -40,7 +40,7 @@ export default class Hero extends Component {
           transitiontimingfunction: "ease-out, linear 2s",
           width: "40%",
           opacity: 1,
-          transform: "translateX(600px)"
+          transform: "translateX(500px)"
         },
         title: {
           //   transition: "all 2s",
