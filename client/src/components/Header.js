@@ -12,7 +12,7 @@ export default class Header extends Component {
       <div className="header-container">
         <div className="header" id="home">
           <NavLink className="header-logo" exact to="/">
-            LOGO
+            RETALLE
           </NavLink>
 
           <div
